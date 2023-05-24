@@ -22,6 +22,7 @@
   }
 
   body {
+    min-width: 768px;
     font-family: var(--font-family);
     font-size: 16px;
     line-height: 1.5;
@@ -162,7 +163,6 @@
   .about-me-text p {
     font-size: 18px;
     line-height: 1.5;
-    max-width: 600px;
     margin: 1rem;
   }
   
@@ -190,14 +190,7 @@
 
     }
     
-    .skills-container {
-      max-width: 960px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 0 auto; /* center the section horizontally */
-      margin-bottom: 2rem;
-    }
+
     
     .skill {
       display: flex;
@@ -623,7 +616,6 @@
         background-image: url('../images/Background\ 2 (Custom).png');
       }
 
-
       #casesintro .jarallax {
         background-image: url('../images/Background\ 3\ black (Custom).png');
       }
@@ -727,7 +719,59 @@
       }
 
 
+      @media screen and (max-width: 992px) {
+        /* Styles for large screens (desktops and laptops) */
 
+        body {
+          font-size: 18px;
+        }
+
+        p {
+          margin: 3px;
+          padding: 1rem;
+        }
+
+        .about-me-image {
+          flex: auto;
+        }
+
+        .skills {
+          width: 100%;
+        }
+
+        .container {
+          max-width: 750px;
+          margin: auto 0;
+        }
+
+        .skill {
+
+          flex-basis: calc(10% - 1rem);
+          margin: 1rem;
+          padding: 1rem;
+        }
+  
+    
+        .container img {
+          max-width: 100%;
+          display: block;
+        }
+          
+        .project {
+           flex-basis: calc(60% - 1rem);
+           margin: 0 auto; /* center the section horizontally */
+
+        }
+
+        .intro-text {
+          flex: auto;
+        }
+
+        .intro-image img {
+          text-align: center;
+        }
+        }
+      
 
 
 
