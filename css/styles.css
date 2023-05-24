@@ -158,6 +158,9 @@
   .about-me-text {
     flex: 1;
     text-align: center;
+    background-color: white;
+    border-radius: 28px;
+    padding: 1rem;
   }
   
   .about-me-text p {
@@ -199,7 +202,6 @@
       flex-direction: column;
       position: relative;
       flex-basis: calc(15% - 1rem);
-      margin: 1rem;
       padding: 1rem;
       text-align: center;
       background-color: #ffffff;
@@ -249,8 +251,9 @@
       text-align: center;
     }
 
-    .skills-container .skillBig img {
+    .skillBig img {
       width: 100%;
+      margin-top: 1rem;
 
     }
 
@@ -758,8 +761,10 @@
         }
           
         .project {
-           flex-basis: calc(60% - 1rem);
+           flex-basis: calc(70% - 1rem);
            margin: 0 auto; /* center the section horizontally */
+           margin-top: 1rem;
+           margin-bottom: 1rem;
 
         }
 
@@ -769,6 +774,41 @@
 
         .intro-image img {
           text-align: center;
+        }
+
+        #about-me, #skills, #portfolio {
+          height: fit-content;
+          width: fit-content;
+          position: relative;
+        }
+  
+        #casesintro, #cases2 , #results{
+          height: fit-content;
+          position: relative;
+        }
+
+        #about-me .jarallax {
+          background-image: url('../images/Background\ 3\ large\(Custom\).png');
+        }
+        
+        #skills .jarallax {
+          background-image: url('../images/Background\ 1\ large\ \(Custom\).png');
+        }
+        
+        #portfolio .jarallax {
+          background-image: url('../images/Background\ 2\ large\ \(Custom\).png');
+        }
+  
+        #casesintro .jarallax {
+          background-image: url('../images/Background\ 3\ black (Custom).png');
+        }
+  
+        #cases2 .jarallax{
+          background-image: url('../images/Background\ 1\ black (Custom).png');
+        }
+  
+        #results .jarallax{
+          background-image: url('../images/Background\ 2\ black (Custom).png');
         }
         }
       
